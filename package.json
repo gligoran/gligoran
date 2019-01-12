@@ -1,26 +1,26 @@
 {
-  "name": "wuz",
-  "version": "1.1.0",
-  "description": "A personal card for Conlin Durbin (@wuz)",
-  "main": "index.js",
-  "bin": {
-    "bitandbang": "./bin/card.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wuz/wuzcard.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Conlin Durbin <sup@wuz.fyi> (https://wuz.fyi)",
-  "license": "MIT",
-  "dependencies": {
-    "boxen": "^2.1.0",
-    "chalk": "^2.4.1"
-  },
-  "devDependencies": {
-    "standard": "^12.0.1"
-  }
+    "name": "gligoran",
+    "version": "1.1.0",
+    "description": "A personal card for Goran Gligorin (@gligoran)",
+    "main": "index.js",
+    "bin": {
+        "bitandbang": "./bin/card.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gligoran/gligoran-card.git"
+    },
+    "scripts": {
+        "start": "node ./bin/card.js"
+    },
+    "keywords": [],
+    "author": "Goran Gligorin <goran@gligorin.com> (https://www.gorangligorin.com)",
+    "license": "MIT",
+    "dependencies": {
+        "boxen": "^2.1.0",
+        "chalk": "^2.4.2"
+    },
+    "devDependencies": {
+        "standard": "^12.0.1"
+    }
 }
