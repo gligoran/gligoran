@@ -1,0 +1,30 @@
+name: node
+
+on: [push]
+
+jobs:
+  build-and-deploy:
+    name: build and deploy
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v1
+
+      - uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: install dependencies
+        run: npm ci
+
+      - name: release to npm
+        env:
+          GITHUB_TOKEN: ${{ secrets.SR_PAT }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release
