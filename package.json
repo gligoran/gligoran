@@ -1,11 +1,21 @@
 {
-    "name": "gligoran",
-    "version": "1.1.0",
-    "description": "A personal card for Goran Gligorin (@gligoran)",
-    "main": "index.js",
+    "author": "Goran Gligorin <goran@gligorin.com> (https://www.gorangligorin.com)",
     "bin": {
         "bitandbang": "./bin/card.js"
     },
+    "dependencies": {
+        "boxen": "^2.1.0",
+        "chalk": "^2.4.2"
+    },
+    "description": "A personal card for Goran Gligorin (@gligoran)",
+    "devDependencies": {
+        "semantic-release": "^17.0.7",
+        "standard": "^12.0.1"
+    },
+    "keywords": [],
+    "license": "MIT",
+    "main": "index.js",
+    "name": "gligoran",
     "repository": {
         "type": "git",
         "url": "https://github.com/gligoran/gligoran-card.git"
@@ -13,15 +23,5 @@
     "scripts": {
         "start": "node ./bin/card.js"
     },
-    "keywords": [],
-    "author": "Goran Gligorin <goran@gligorin.com> (https://www.gorangligorin.com)",
-    "license": "MIT",
-    "dependencies": {
-        "boxen": "^2.1.0",
-        "chalk": "^2.4.2"
-    },
-    "devDependencies": {
-        "semantic-release": "17.0.7",
-        "standard": "^12.0.1"
-    }
+    "version": "0.0.0"
 }
