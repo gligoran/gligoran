@@ -10,7 +10,7 @@
     "description": "A personal card for Goran Gligorin (@gligoran)",
     "devDependencies": {
         "semantic-release": "17.0.7",
-        "standard": "12.0.1"
+        "standard": "14.3.3"
     },
     "keywords": [],
     "license": "MIT",
