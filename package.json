@@ -4,7 +4,7 @@
         "bitandbang": "./bin/card.js"
     },
     "dependencies": {
-        "boxen": "^2.1.0",
+        "boxen": "^4.0.0",
         "chalk": "^2.4.2"
     },
     "description": "A personal card for Goran Gligorin (@gligoran)",
