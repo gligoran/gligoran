@@ -23,6 +23,9 @@ jobs:
       - name: install dependencies
         run: npm ci
 
+      - name: test run
+        run: node bin/card.js
+
       - name: release to npm
         env:
           GITHUB_TOKEN: ${{ secrets.SR_PAT }}
