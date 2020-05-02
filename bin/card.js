@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// 👆 Used to tell Node.js that this is a CLI tool
+// ?? Used to tell Node.js that this is a CLI tool
 
 // Pull in our modules
 const chalk = require('chalk');
@@ -14,32 +14,52 @@ const options = {
 
 // Text, chalk definitions
 const data = {
-    name: chalk.white('Goran Gligorin'),
-    handle: chalk.greenBright.bold('gligoran'),
-    work: chalk.white('Frontend Software Engineer at D.Labs'),
-    twitter: chalk.redBright('https://twitter.com/gligoran'),
-    github: chalk.redBright('https://github.com/gligoran'),
-    linkedin: chalk.redBright('https://linkedin.com/in/gorangligorin'),
-    web: chalk.redBright('https://www.gorangligorin.com'),
-    npx: chalk.white('npx gligoran'),
-    labelWork: chalk.white.bold('      Work:'),
-    labelTwitter: chalk.white.bold('   Twitter:'),
-    labelGitHub: chalk.white.bold('    GitHub:'),
-    labelLinkedIn: chalk.white.bold('  LinkedIn:'),
-    labelWeb: chalk.white.bold('       Web:'),
-    labelCard: chalk.white.bold('      Card:'),
+    name: chalk.white('goran gligorin'),
+    handle: chalk.hex('#FFCA59').bold('gligoran'),
+
+    labelWork: chalk.white('    work:'),
+    work: chalk.white.bold('frontend software engineer at ') + chalk.hex('#5533FF').bold('d.labs'),
+
+    labelWeb: chalk.hex('#ffc168')('     web:'),
+    web: chalk.hex('#ffc168').bold('https://www.gorangligorin.com'),
+
+    labelGithub: chalk.hex('#ff6c5f')('  github:'),
+    github: chalk.hex('#ff6c5f').bold('https://github.com/gligoran'),
+
+    labelNpm: chalk.hex('#ff4f81')('     npm:'),
+    npm: chalk.hex('#ff4f81').bold('https://npmjs.com/~gligoran'),
+
+    labelLinkedin: chalk.hex('8e43e7')('linkedin:'),
+    linkedin: chalk.hex('8e43e7').bold('https://linkedin.com/in/gorangligorin'),
+
+    labelTwitter: chalk.hex('#1da1f2')(' twitter:'),
+    twitter: chalk.hex('#1da1f2').bold('https://twitter.com/gligoran'),
+
+    labelCard: chalk.hex('#00FF41')('    card:'),
+    card: chalk.hex('#00FF41').bold('npx gligoran'),
 };
 
 // Actual strings we're going to output
-const heading = `${data.name} ▵  ${data.handle}`;
 const working = `${data.labelWork}  ${data.work}`;
-const githubing = `${data.labelGitHub}  ${data.github}`;
-const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`;
+const githubing = `${data.labelGithub}  ${data.github}`;
+const npming = `${data.labelNpm}  ${data.npm}`;
+const linkedining = `${data.labelLinkedin}  ${data.linkedin}`;
 const webing = `${data.labelWeb}  ${data.web}`;
 const twittering = `${data.labelTwitter}  ${data.twitter}`;
-const carding = `${data.labelCard}  ${data.npx}`;
+const carding = `${data.labelCard}  ${data.card}`;
 
-// Put all our output together into a single variable so we can use boxen effectively
-const output = [heading, '', working, githubing, linkedining, webing, twittering, '', carding].join('\n');
+const output = `
+                    ${data.handle}
+              ${chalk.hex('#F0533E')('a.k.a.')} ${data.name}
+  
+${working}
+${webing}
+${npming}
+${githubing}
+${linkedining}
+${twittering}
 
-console.log(chalk.green(boxen(output, options)));
+${carding}
+`;
+
+console.log(chalk.hex('#4AE695')(boxen(output, options)));
