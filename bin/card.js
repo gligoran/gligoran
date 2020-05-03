@@ -9,7 +9,7 @@ const boxen = require('boxen');
 const options = {
     padding: 1,
     margin: 1,
-    borderStyle: 'round',
+    borderStyle: 'round'
 };
 
 // Text, chalk definitions
@@ -36,7 +36,7 @@ const data = {
     twitter: chalk.hex('#1da1f2').bold('https://twitter.com/gligoran'),
 
     labelCard: chalk.hex('#00FF41')('    card:'),
-    card: chalk.hex('#00FF41').bold('npx gligoran'),
+    card: chalk.hex('#00FF41').bold('npx gligoran')
 };
 
 // Actual strings we're going to output

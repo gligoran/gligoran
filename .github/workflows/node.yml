@@ -8,6 +8,14 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version:
+          - "10"
+          - "12"
+          - "13"
+          - "14"
+
     steps:
       - uses: actions/checkout@v2
 
@@ -16,15 +24,22 @@ jobs:
       - uses: actions/cache@v1
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-node-
+            ${{ runner.os }}-node-${{ matrix.node-version }}
 
       - name: install dependencies
         run: npm ci
 
-      - name: test run
-        run: node bin/card.js
+      - name: test
+        run: npm run coverage
+
+      - name: upload coverage
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        run: |
+          npm run report-coverage
+          npm run upload-coverage
 
       - name: release to npm
         env:
