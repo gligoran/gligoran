@@ -14,8 +14,8 @@ const options = {
 
 // Text, chalk definitions
 const data = {
-    name: chalk.white('goran gligorin'),
     handle: chalk.hex('#FFCA59').bold('gligoran'),
+    name: chalk.white.bold('goran gligorin'),
 
     labelWork: chalk.white('    work:'),
     work: chalk.white.bold('frontend software engineer at ') + chalk.hex('#5533FF').bold('d.labs'),
@@ -50,7 +50,7 @@ const carding = `${data.labelCard}  ${data.card}`;
 
 const output = `
                     ${data.handle}
-              ${chalk.hex('#F0533E')('a.k.a.')} ${data.name}
+              a.k.a. ${data.name}
   
 ${working}
 ${webing}
@@ -62,4 +62,4 @@ ${twittering}
 ${carding}
 `;
 
-console.log(chalk.hex('#4AE695')(boxen(output, options)));
+console.log(chalk.hex('#FFCA59')(boxen(output, options)));
