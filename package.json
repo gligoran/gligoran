@@ -5,7 +5,7 @@
     },
     "dependencies": {
         "boxen": "^4.0.0",
-        "chalk": "^4.0.0"
+        "chalk": "^4.1.0"
     },
     "description": "A personal card for Goran Gligorin (@gligoran)",
     "devDependencies": {
