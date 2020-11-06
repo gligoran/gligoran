@@ -12,7 +12,7 @@
         "ava": "3.13.0",
         "codecov": "3.8.1",
         "eslint": "7.12.1",
-        "eslint-config-airbnb-base": "14.2.0",
+        "eslint-config-airbnb-base": "14.2.1",
         "husky": "4.3.0",
         "nyc": "15.1.0",
         "semantic-release": "17.2.2",
