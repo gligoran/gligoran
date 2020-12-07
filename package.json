@@ -13,16 +13,11 @@
         "codecov": "3.8.1",
         "eslint": "7.15.0",
         "eslint-config-airbnb-base": "14.2.1",
-        "husky": "4.3.4",
+        "husky": "5.0.4",
         "nyc": "15.1.0",
         "semantic-release": "17.3.0",
         "sinon": "9.2.1",
         "standard": "16.0.3"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "npm run coverage"
-        }
     },
     "keywords": [],
     "license": "MIT",
