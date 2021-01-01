@@ -9,7 +9,7 @@
     },
     "description": "A personal card for Goran Gligorin (@gligoran)",
     "devDependencies": {
-        "ava": "3.14.0",
+        "ava": "3.15.0",
         "codecov": "3.8.1",
         "eslint": "7.16.0",
         "eslint-config-airbnb-base": "14.2.1",
