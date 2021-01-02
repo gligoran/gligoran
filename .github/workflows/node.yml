@@ -28,8 +28,6 @@ jobs:
       - name: test
         run: npm run coverage
       - name: upload coverage
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         run: |
           npm run report-coverage
           npm run upload-coverage

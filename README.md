@@ -16,14 +16,14 @@ I'm Goran Gligorin a.k.a. gligoran.
 [![NPM](https://nodei.co/npm/gligoran.png?downloads=true&stars=true)](https://nodei.co/npm/gligoran/)
 
 [![ISC License](https://img.shields.io/npm/l/gligoran.svg?style=flat)](http://opensource.org/licenses/ISC)
-[![npm version](https://img.shields.io/npm/v/gligoran.svg?style=flat)](http://npm.im/gligoran-card)
-[![npm downloads](https://img.shields.io/npm/dt/gligoran.svg?style=flat)](http://npm-stat.com/charts.html?package=gligoran-card&from=2017-02-08)
-[![build](https://img.shields.io/github/workflow/status/gligoran/gligoran-card/node/master?style=flat)](https://github.com/gligoran/gligoran-card/actions?query=branch%3Amaster+workflow%3Anode)
-[![codecov](https://img.shields.io/codecov/c/github/gligoran/gligoran-card.svg?style=flat)](https://codecov.io/gh/gligoran/gligoran-card)
-[![maintainability](https://img.shields.io/codeclimate/maintainability/gligoran/gligoran-card?style=flat)](https://codeclimate.com/github/gligoran/gligoran-card/maintainability)
-[![dependencies](https://img.shields.io/david/gligoran/gligoran-card.svg?style=flat)](https://david-dm.org/gligoran/gligoran-card)
-[![devDependencies](https://img.shields.io/david/dev/gligoran/gligoran-card.svg?style=flat)](https://david-dm.org/gligoran/gligoran-card?type=dev)
-[![known vulnerabilities](https://snyk.io/test/github/gligoran/gligoran-card/badge.svg?targetFile=package.json)](https://snyk.io/test/github/gligoran/gligoran-card?targetFile=package.json)
+[![npm version](https://img.shields.io/npm/v/gligoran.svg?style=flat)](http://npm.im/gligoran)
+[![npm downloads](https://img.shields.io/npm/dt/gligoran.svg?style=flat)](http://npm-stat.com/charts.html?package=gligoran&from=2017-02-08)
+[![build](https://img.shields.io/github/workflow/status/gligoran/gligoran/node/main?style=flat)](https://github.com/gligoran/gligoran/actions?query=branch%main+workflow%3Anode)
+[![codecov](https://img.shields.io/codecov/c/github/gligoran/gligoran.svg?style=flat)](https://codecov.io/gh/gligoran/gligoran)
+[![maintainability](https://img.shields.io/codeclimate/maintainability/gligoran/gligoran?style=flat)](https://codeclimate.com/github/gligoran/gligoran/maintainability)
+[![dependencies](https://img.shields.io/david/gligoran/gligoran.svg?style=flat)](https://david-dm.org/gligoran/gligoran)
+[![devDependencies](https://img.shields.io/david/dev/gligoran/gligoran.svg?style=flat)](https://david-dm.org/gligoran/gligoran?type=dev)
+[![known vulnerabilities](https://snyk.io/test/github/gligoran/gligoran/badge.svg?targetFile=package.json)](https://snyk.io/test/github/gligoran/gligoran?targetFile=package.json)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat)](https://github.com/semantic-release/semantic-release)
 
 Usage via npx:

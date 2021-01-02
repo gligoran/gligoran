@@ -34,9 +34,14 @@
         "per-file": true,
         "statements": 100
     },
+    "release": {
+        "branches": [
+            "main"
+        ]
+    },
     "repository": {
         "type": "git",
-        "url": "https://github.com/gligoran/gligoran-card.git"
+        "url": "https://github.com/gligoran/gligoran.git"
     },
     "scripts": {
         "clean": "rm -rf .nyc_output coverage dist",
