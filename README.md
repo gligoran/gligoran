@@ -15,7 +15,7 @@ I'm Goran Gligorin a.k.a. gligoran.
 
 [![NPM](https://nodei.co/npm/gligoran.png?downloads=true&stars=true)](https://nodei.co/npm/gligoran/)
 
-[![ISC License](https://img.shields.io/npm/l/gligoran.svg?style=flat)](http://opensource.org/licenses/ISC)
+[![MIT License](https://img.shields.io/npm/l/gligoran.svg?style=flat)](http://opensource.org/licenses/MIT)
 [![npm version](https://img.shields.io/npm/v/gligoran.svg?style=flat)](http://npm.im/gligoran)
 [![npm downloads](https://img.shields.io/npm/dt/gligoran.svg?style=flat)](http://npm-stat.com/charts.html?package=gligoran&from=2017-02-08)
 [![build](https://img.shields.io/github/workflow/status/gligoran/gligoran/node/main?style=flat)](https://github.com/gligoran/gligoran/actions?query=branch%main+workflow%3Anode)
