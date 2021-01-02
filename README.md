@@ -1,4 +1,17 @@
-# gligoran
+# Hi there 👋
+
+I'm Goran Gligorin a.k.a. gligoran.
+
+- work: frontend software engineer at [d.labs](https://github.com/dlabs)
+- web: https://www.gorangligorin.com
+- npm: https://npmjs.com/~gligoran
+- github: https://github.com/gligoran
+- linkedin: https://linkedin.com/in/gorangligorin
+- twitter: https://twitter.com/gligoran
+
+![GitHub Stats for Goran](https://github-readme-stats.vercel.app/api?username=gligoran&theme=dark&show_icons=true)
+
+## `npx gligoran`
 
 [![NPM](https://nodei.co/npm/gligoran.png?downloads=true&stars=true)](https://nodei.co/npm/gligoran/)
 
@@ -13,9 +26,7 @@
 [![known vulnerabilities](https://snyk.io/test/github/gligoran/gligoran-card/badge.svg?targetFile=package.json)](https://snyk.io/test/github/gligoran/gligoran-card?targetFile=package.json)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat)](https://github.com/semantic-release/semantic-release)
 
-# Usage
-
-Via npx:
+Usage via npx:
 
 ```
 npx gligoran
