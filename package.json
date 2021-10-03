@@ -17,7 +17,7 @@
         "nyc": "15.1.0",
         "semantic-release": "18.0.0",
         "sinon": "11.1.2",
-        "standard": "16.0.3"
+        "standard": "16.0.4"
     },
     "keywords": [],
     "license": "MIT",
