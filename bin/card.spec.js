@@ -9,7 +9,7 @@ const expected = `
    │                       gligoran                       │
    │                 a.k.a. goran gligorin                │
    │                                                      │
-   │       work:  frontend software engineer at d.labs    │
+   │       work:  senior web engineer at d.labs           │
    │        web:  https://www.gorangligorin.com           │
    │        npm:  https://npmjs.com/~gligoran             │
    │     github:  https://github.com/gligoran             │

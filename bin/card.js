@@ -15,7 +15,7 @@ const data = {
 
   labelWork: chalk.white('    work:'),
   work:
-    chalk.white.bold('frontend software engineer at ') +
+    chalk.white.bold('senior web engineer at ') +
     chalk.hex('#5533FF').bold('d.labs'),
 
   labelWeb: chalk.hex('#ffc168')('     web:'),
