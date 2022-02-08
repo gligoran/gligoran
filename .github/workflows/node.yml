@@ -10,10 +10,9 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - "10"
-          - "12"
+          - "16"
           - "14"
-          - "15"
+          - "12"
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -38,7 +37,7 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - "14"
+          - "16"
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2

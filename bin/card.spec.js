@@ -1,7 +1,8 @@
-const test = require('ava');
-const sinon = require('sinon');
+import test from 'ava';
+import sinon from 'sinon';
+import stripAnsi from 'strip-ansi';
 
-const output = `
+const expected = `
    ╭──────────────────────────────────────────────────────╮
    │                                                      │
    │                                                      │
@@ -22,15 +23,14 @@ const output = `
 `;
 
 test.beforeEach(() => {
-    console.log = sinon.spy();
+  console.log = sinon.spy();
 });
 
-test('bar', async t => {
-    require('./card');
+test('bar', async (t) => {
+  // eslint-disable-next-line node/no-unsupported-features/es-syntax
+  await import('./card.js');
 
-    const arg = console.log.args
-        && console.log.args[0]
-        && console.log.args[0][0];
+  const actual = stripAnsi(console.log?.args?.[0]?.[0]);
 
-    t.is(arg, output);
+  t.is(actual, expected);
 });

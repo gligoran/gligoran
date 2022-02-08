@@ -1,60 +1,92 @@
 {
-    "author": "Goran Gligorin <goran@gligorin.com> (https://www.gorangligorin.com)",
-    "bin": {
-        "gligoran": "./bin/card.js"
+  "author": "Goran Gligorin <goran@gligorin.com> (https://www.gorangligorin.com)",
+  "bin": {
+    "gligoran": "./bin/card.js"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "boxen": "^6.2.1",
+    "chalk": "^5.0.0"
+  },
+  "description": "A personal card for Goran Gligorin (@gligoran)",
+  "devDependencies": {
+    "ava": "^4.0.1",
+    "codecov": "3.8.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "7.0.4",
+    "nyc": "15.1.0",
+    "semantic-release": "19.0.2",
+    "sinon": "13.0.1",
+    "strip-ansi": "^7.0.1",
+    "xo": "^0.47.0"
+  },
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  },
+  "exports": "./bin/card.js",
+  "keywords": [],
+  "license": "MIT",
+  "name": "gligoran",
+  "nyc": {
+    "branches": 100,
+    "check-coverage": true,
+    "functions": 100,
+    "include": [
+      "bin/card.js"
+    ],
+    "lines": 100,
+    "per-file": true,
+    "statements": 100
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gligoran/gligoran.git"
+  },
+  "scripts": {
+    "clean": "rm -rf .nyc_output coverage dist",
+    "coverage": "nyc npm test",
+    "lint": "xo",
+    "lint:fix": "npm run lint -- --fix",
+    "postcoverage": "nyc check-coverage",
+    "report-coverage": "nyc report --reporter=lcov",
+    "start": "node ./bin/card.js",
+    "test": "npm run lint && ava",
+    "test:watch": "npm test -- --watch",
+    "upload-coverage": "codecov",
+    "wipe": "npm run clean && rm -rf node_modules"
+  },
+  "type": "module",
+  "version": "0.0.0",
+  "volta": {
+    "node": "16.13.2",
+    "npm": "8.4.1"
+  },
+  "xo": {
+    "envs": [
+      "es2021",
+      "node"
+    ],
+    "prettier": true,
+    "rules": {
+      "capitalized-comments": [
+        "error",
+        "never",
+        {
+          "ignoreConsecutiveComments": true,
+          "ignoreInlineComments": true,
+          "ignorePattern": "pragma|ignore|prettier-ignore"
+        }
+      ]
     },
-    "dependencies": {
-        "boxen": "^5.0.0",
-        "chalk": "^4.1.0"
-    },
-    "description": "A personal card for Goran Gligorin (@gligoran)",
-    "devDependencies": {
-        "ava": "3.15.0",
-        "codecov": "3.8.3",
-        "eslint": "7.32.0",
-        "eslint-config-airbnb-base": "15.0.0",
-        "husky": "7.0.4",
-        "nyc": "15.1.0",
-        "semantic-release": "19.0.2",
-        "sinon": "13.0.1",
-        "standard": "16.0.4"
-    },
-    "keywords": [],
-    "license": "MIT",
-    "main": "bin/card.js",
-    "name": "gligoran",
-    "nyc": {
-        "branches": 100,
-        "check-coverage": true,
-        "functions": 100,
-        "include": [
-            "bin/card.js"
-        ],
-        "lines": 100,
-        "per-file": true,
-        "statements": 100
-    },
-    "release": {
-        "branches": [
-            "main"
-        ]
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/gligoran/gligoran.git"
-    },
-    "scripts": {
-        "clean": "rm -rf .nyc_output coverage dist",
-        "coverage": "nyc npm test",
-        "lint": "eslint bin",
-        "lint:fix": "npm run lint -- --fix",
-        "postcoverage": "nyc check-coverage",
-        "report-coverage": "nyc report --reporter=lcov",
-        "start": "node ./bin/card.js",
-        "test": "npm run lint && ava",
-        "test:watch": "npm test -- --watch",
-        "upload-coverage": "codecov",
-        "wipe": "npm run clean && rm -rf node_modules"
-    },
-    "version": "0.0.0"
+    "space": true
+  }
 }
