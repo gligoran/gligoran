@@ -19,7 +19,7 @@
     "cz-conventional-changelog": "3.3.0",
     "husky": "8.0.1",
     "nyc": "15.1.0",
-    "semantic-release": "19.0.2",
+    "semantic-release": "19.0.3",
     "sinon": "14.0.0",
     "strip-ansi": "7.0.1",
     "xo": "0.49.0"
