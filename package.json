@@ -17,7 +17,7 @@
     "ava": "5.0.1",
     "codecov": "3.8.3",
     "cz-conventional-changelog": "3.3.0",
-    "husky": "8.0.1",
+    "husky": "8.0.2",
     "nyc": "15.1.0",
     "semantic-release": "19.0.5",
     "sinon": "14.0.2",
