@@ -14,7 +14,7 @@
   },
   "description": "A personal card for Goran Gligorin (@gligoran)",
   "devDependencies": {
-    "ava": "5.1.0",
+    "ava": "5.1.1",
     "codecov": "3.8.3",
     "cz-conventional-changelog": "3.3.0",
     "husky": "8.0.3",
