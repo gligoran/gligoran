@@ -10,12 +10,15 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - "16"
-          - "14"
-          - "12"
+          - '19'
+          - '18'
+          - '16'
+          - '14'
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
       - uses: actions/cache@v3
         with:
           path: ~/.npm
@@ -37,10 +40,12 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - "16"
+          - '18'
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
       - uses: actions/cache@v3
         with:
           path: ~/.npm
