@@ -2,7 +2,6 @@ name: node
 
 on:
   - push
-  - pull_request
 
 jobs:
   test:
@@ -10,10 +9,10 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - '19'
-          - '18'
-          - '16'
-          - '14'
+          - 19
+          - 18
+          - 16
+          - 14
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -25,12 +24,9 @@ jobs:
           key: ${{ runner.os }}-node-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-${{ matrix.node-version }}
-      - name: install dependencies
-        run: npm ci
-      - name: test
-        run: npm run coverage
-      - name: upload coverage
-        run: |
+      - run: npm ci
+      - run: npm run coverage
+      - run: |
           npm run report-coverage
           npm run upload-coverage
 
@@ -40,7 +36,7 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - '18'
+          - 18
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -52,10 +48,8 @@ jobs:
           key: ${{ runner.os }}-node-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-${{ matrix.node-version }}
-      - name: install dependencies
-        run: npm ci
-      - name: release to npm
+      - run: npm ci
+      - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.SR_PAT }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
