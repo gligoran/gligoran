@@ -26,8 +26,7 @@ test.beforeEach(() => {
   console.log = sinon.spy();
 });
 
-test('bar', async (t) => {
-  // eslint-disable-next-line node/no-unsupported-features/es-syntax
+test('renders correctly', async (t) => {
   await import('./card.js');
 
   const actual = stripAnsi(console.log?.args?.[0]?.[0]);
