@@ -21,7 +21,7 @@
     "nyc": "15.1.0",
     "semantic-release": "21.0.2",
     "sinon": "15.1.0",
-    "strip-ansi": "7.0.1",
+    "strip-ansi": "7.1.0",
     "xo": "0.54.2"
   },
   "engines": {
