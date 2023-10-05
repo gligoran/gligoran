@@ -14,7 +14,7 @@
     "husky": "8.0.3",
     "nyc": "15.1.0",
     "semantic-release": "22.0.5",
-    "sinon": "16.0.0",
+    "sinon": "16.1.0",
     "strip-ansi": "7.1.0",
     "xo": "0.56.0"
   },
