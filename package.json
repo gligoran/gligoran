@@ -9,7 +9,7 @@
   },
   "description": "A personal card for Goran Gligorin (@gligoran)",
   "devDependencies": {
-    "ava": "6.1.3",
+    "ava": "6.4.1",
     "codecov": "3.8.3",
     "husky": "9.1.6",
     "nyc": "17.1.0",
