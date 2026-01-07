@@ -4,19 +4,18 @@
     "gligoran": "./bin/card.js"
   },
   "dependencies": {
-    "boxen": "^7.0.1",
-    "chalk": "^5.0.0"
+    "boxen": "^8.0.1",
+    "chalk": "^5.6.2"
   },
   "description": "A personal card for Goran Gligorin (@gligoran)",
   "devDependencies": {
     "ava": "6.4.1",
-    "codecov": "3.8.3",
-    "husky": "9.1.6",
+    "husky": "9.1.7",
     "nyc": "17.1.0",
-    "semantic-release": "22.0.12",
-    "sinon": "19.0.2",
-    "strip-ansi": "7.1.0",
-    "xo": "0.58.0"
+    "semantic-release": "25.0.2",
+    "sinon": "21.0.1",
+    "strip-ansi": "7.1.2",
+    "xo": "1.2.3"
   },
   "engines": {
     "node": "^14.13.1 || >=16.0.0"
@@ -55,7 +54,6 @@
     "start": "node ./bin/card.js",
     "test": "npm run lint && ava",
     "test:watch": "npm test -- --watch",
-    "upload-coverage": "codecov",
     "wipe": "npm run clean && rm -rf node_modules"
   },
   "type": "module",
@@ -65,10 +63,6 @@
     "npm": "10.8.3"
   },
   "xo": {
-    "envs": [
-      "es2021",
-      "node"
-    ],
     "prettier": true,
     "rules": {
       "capitalized-comments": [
@@ -81,6 +75,7 @@
         }
       ]
     },
+    "semicolon": true,
     "space": true
   }
 }
