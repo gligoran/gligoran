@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import chalk from 'chalk';
 import boxen from 'boxen';
+import chalk from 'chalk';
 
 const options = {
   padding: 1,

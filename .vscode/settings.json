@@ -1,17 +1,9 @@
 {
   "[javascript]": {
-    "editor.defaultFormatter": "samverschueren.linter-xo"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
-  "[markdown]": {
-    "editor.defaultFormatter": "samverschueren.linter-xo"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "samverschueren.linter-xo"
-  },
-  "editor.formatOnSave": true,
-  "xo.enable": true,
-  "xo.format.enable": true
+  "editor.formatOnSave": true
 }

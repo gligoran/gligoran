@@ -1,6 +1,5 @@
-import test from 'ava';
-import sinon from 'sinon';
-import stripAnsi from 'strip-ansi';
+import { afterEach, beforeEach, describe, expect, mock, test } from 'bun:test';
+import { stripVTControlCharacters } from 'node:util';
 
 const expected = `
    ╭──────────────────────────────────────────────────────╮
@@ -22,14 +21,24 @@ const expected = `
    ╰──────────────────────────────────────────────────────╯
 `;
 
-test.beforeEach(() => {
-  console.log = sinon.spy();
-});
+describe('card', () => {
+  const originalLog = console.log;
+  let logSpy;
 
-test('renders correctly', async (t) => {
-  await import('./card.js');
+  beforeEach(() => {
+    logSpy = mock(() => {});
+    console.log = logSpy;
+  });
 
-  const actual = stripAnsi(console.log?.args?.[0]?.[0]);
+  afterEach(() => {
+    console.log = originalLog;
+  });
 
-  t.is(actual, expected);
+  test('renders correctly', async () => {
+    await import('./card.js');
+
+    const actual = stripVTControlCharacters(logSpy.mock.calls[0][0]);
+
+    expect(actual).toBe(expected);
+  });
 });
