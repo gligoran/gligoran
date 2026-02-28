@@ -27,8 +27,8 @@ const data = {
   labelNpm: chalk.hex('#ff4f81')('     npm:'),
   npm: chalk.hex('#ff4f81').bold('https://npmjs.com/~gligoran'),
 
-  labelLinkedin: chalk.hex('8e43e7')('linkedin:'),
-  linkedin: chalk.hex('8e43e7').bold('https://linkedin.com/in/gorangligorin'),
+  labelLinkedin: chalk.hex('#8e43e7')('linkedin:'),
+  linkedin: chalk.hex('#8e43e7').bold('https://linkedin.com/in/gorangligorin'),
 
   labelTwitter: chalk.hex('#1da1f2')(' twitter:'),
   twitter: chalk.hex('#1da1f2').bold('https://twitter.com/gligoran'),

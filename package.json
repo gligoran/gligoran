@@ -35,7 +35,7 @@
     "start": "node ./bin/card.js",
     "test": "bun test",
     "test:watch": "bun test --watch",
-    "wipe": "npm run clean && rm -rf node_modules"
+    "wipe": "bun run clean && rm -rf node_modules"
   },
   "type": "module",
   "version": "0.0.0"
