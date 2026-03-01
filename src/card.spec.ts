@@ -23,7 +23,7 @@ const expected = `
 
 describe('card', () => {
   const originalLog = console.log;
-  let logSpy;
+  let logSpy: ReturnType<typeof mock>;
 
   beforeEach(() => {
     logSpy = mock(() => {});
@@ -35,7 +35,7 @@ describe('card', () => {
   });
 
   test('renders correctly', async () => {
-    await import('./card.js');
+    await import('./card.ts');
 
     const actual = stripVTControlCharacters(logSpy.mock.calls[0][0]);
 

@@ -1,12 +1,10 @@
-#!/usr/bin/env node
-
 import boxen from 'boxen';
 import chalk from 'chalk';
 
 const options = {
   padding: 1,
   margin: 1,
-  borderStyle: 'round',
+  borderStyle: 'round' as const,
 };
 
 const data = {
@@ -48,7 +46,7 @@ const carding = `${data.labelCard}  ${data.card}`;
 const output = `
                     ${data.handle}
               a.k.a. ${data.name}
-  
+
 ${working}
 ${webing}
 ${npming}
